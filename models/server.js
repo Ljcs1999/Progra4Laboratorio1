@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors')
 
 class Server{
     constructor(){
@@ -17,7 +18,7 @@ class Server{
         this.app.use('/precios',require('../routes/precios'))
         this.app.use('/paquetes',require('../routes/paquetes'))
         this.app.use('/envios',require('../routes/envios'))
-        this.app.use('/detalleEnvios',require('../routes/detalleEnvios'))
+        this.app.use('/detallesEnvios',require('../routes/detallesEnvios'))
         this.app.use('/seguimiento',require('../routes/seguimiento'))
     }
 
